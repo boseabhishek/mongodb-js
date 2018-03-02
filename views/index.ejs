@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GoM - A game of CRUD in MongoDB</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+  <div class="top-fixed-nav-bar">jefkjkj</div>
+
+  <div class="fixed-nav-bar">
+    <form action="/add" method="POST">
+      <input type="text" placeholder="name" name="name">
+      <input type="text" placeholder="family" name="family">
+      <input type="text" placeholder="seat" name="seat">
+      <button class ="button button2" type="submit">add</button>
+    </form>
+  </div>
+
+  <div class="a">
+  <table>
+    <tr>
+      <th>Name</th><th>Family</th><th>Seat</th><th></th>
+    </tr>
+    <% for(var i=0; i<quotes.length; i++) {%>
+      <tr>
+        <td><%= quotes[i].name %></td>
+        <td><%= quotes[i].family %></td>
+        <td><%= quotes[i].seat %></td>
+        <td><a href="/delete" class ="button button2">delete</a></td>
+      </tr>    
+    <% } %>
+  </table>
+  </div>
+
+
+</body>
+</html>
