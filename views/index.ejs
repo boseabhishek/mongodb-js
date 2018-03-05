@@ -8,7 +8,7 @@
 
 <body>
 
-  <div class="top-fixed-nav-bar">jefkjkj</div>
+  <div class="top-fixed-nav-bar"><span> ________ Game of Mongo</span></div>
 
   <div class="fixed-nav-bar">
     <form action="/add" method="POST">
@@ -19,6 +19,7 @@
     </form>
   </div>
 
+  <%if (quotes.length > 0) { %>
   <div class="a">
   <table>
     <tr>
@@ -29,11 +30,12 @@
         <td><%= quotes[i].name %></td>
         <td><%= quotes[i].family %></td>
         <td><%= quotes[i].seat %></td>
-        <td><a href="/delete" class ="button button2">delete</a></td>
+        <td><a href="/delete/<%= quotes[i].name %>" class ="button button2">delete</a></td>
       </tr>    
     <% } %>
   </table>
   </div>
+  <% } %>
 
 
 </body>

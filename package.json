@@ -1,5 +1,5 @@
 {
-  "name": "got-demo",
+  "name": "mongodb-js",
   "version": "1.0.0",
   "description": "web app to play with MongoDB!",
   "main": "index.js",
