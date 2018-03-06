@@ -1,0 +1,27 @@
+For buidling the app, we need:
+- node.js
+- npm
+
+For Windows
+-----------
+http://blog.teamtreehouse.com/install-node-js-npm-windows
+
+For Ubuntu
+----------
+https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-16-04
+
+For Mac OSx
+-----------
+http://blog.teamtreehouse.com/install-node-js-npm-mac
+
+
+Now, as node and npm are installed, we need to add some dependency
+
+npm install express --save
+
+npm install body-parser --save
+
+npm install mongodb --save
+
+npm install ejs --save
+

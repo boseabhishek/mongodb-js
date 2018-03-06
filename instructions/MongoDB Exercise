@@ -1,0 +1,63 @@
+Insert
+-------
+
+name : Fight Club
+director : David Fincher
+year : 1999
+actors : [
+  Brad Pitt
+  Edward Norton
+]
+
+name : Pulp Fiction
+director : Quentin Tarantino
+year : 1994
+actors : [
+  John Travolta
+  Uma Thurman
+]
+
+name : Jurrasic Park
+director : Steven Speilberg
+year : 1993
+actors : [
+  Sam Neill
+  Laura Dern
+]
+
+name : Kill Bill
+director : Quentin Tarantino
+year : 2003
+actors : [
+  Lucy Liu
+  Uma Thurman
+]
+
+name: The Avaitor
+director: Martin Scorsese
+
+name: The Post
+year: 2017
+
+
+Find
+----
+
+get all documents
+get all documents with writer set to "Quentin Tarantino"
+get all documents where actors include "Uma Thurman"
+get all movies released in the 90s
+
+Update
+------
+
+add a description "The Bride wakens from a four-year coma. The child she carried in her womb is gone. Now she must wreak vengeance on the team of assassins who betrayed her - a team she was once part of." to "Kill Bill"
+add a description "An insomniac office worker, looking for a way to change his life, crosses paths with a devil-may-care soapmaker, forming an underground fight club that evolves into something much, much more." to "Fight Club"
+add an actor named "Samuel L. Jackson" to the movie "Pulp Fiction"
+
+text search
+-----------
+find all movies that have a synopsis that contains the word "coma"
+
+
+
