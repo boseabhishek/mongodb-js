@@ -30,7 +30,7 @@
         <td><%= quotes[i].name %></td>
         <td><%= quotes[i].family %></td>
         <td><%= quotes[i].seat %></td>
-        <td><a href="/delete" class ="button button2">delete</a></td>
+        <td><a href="/delete/<%= quotes[i].name %>" class ="button button2">delete</a></td>
       </tr>    
     <% } %>
   </table>

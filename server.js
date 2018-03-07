@@ -29,6 +29,14 @@ app.post('/add', (req, res) => {
   })
 })
 
+app.get('/delete/:name', (req, res) => {
+    db.collection('got').findOneAndDelete({name: req.params.name}, (err, result) => {
+    if (err) return console.log(err)
+       console.log('document is deleted')
+    res.redirect('/')
+  })
+})
+
 MongoClient.connect(url, (err, client) => {
   if (err) return console.log(err)
   db = client.db('mongocodeclub')
